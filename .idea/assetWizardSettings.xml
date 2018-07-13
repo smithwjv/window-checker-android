@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_circle" />
-                            <entry key="sourceFile" value="C:\Users\Will\dev\icons\WindowCheckerIcons\Circle\SVG\ic_material_product_icon_192px.svg" />
+                            <entry key="outputName" value="ic_foreground" />
+                            <entry key="sourceFile" value="C:\Users\Will\dev\icons\WindowCheckerIcons\Foreground\SVG\ic_material_product_icon_192px.svg" />
                           </map>
                         </option>
                       </PersistentState>
