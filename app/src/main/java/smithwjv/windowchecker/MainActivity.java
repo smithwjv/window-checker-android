@@ -3,6 +3,7 @@ package smithwjv.windowchecker;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         piResponseTextView = (TextView) findViewById(R.id.tv_pi_response);
+    }
+
+    public void checkWindow(View view) {
         new PiQueryTask().execute(NetworkUtils.getUrl(this));
     }
 

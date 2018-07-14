@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Window Checker</string>
+    <string name="btn_check">Check</string>
 </resources>
