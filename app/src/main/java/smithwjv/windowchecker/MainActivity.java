@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         checkWindowButton = (Button) findViewById(R.id.btn_check_window);
         piResponseTextView = (TextView) findViewById(R.id.tv_pi_response);
+
+        piResponseTextView.setText(R.string.tv_prompt);
     }
 
     public void checkWindow(View view) {
@@ -48,7 +50,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             if (s!= null && !s.equals("")) {
-                piResponseTextView.setText(s);
+                if (Float.valueOf(s) <= 3.42) {
+                    piResponseTextView.setText(R.string.tv_closed);
+                } else {
+                    piResponseTextView.setText(R.string.tv_open);
+                }
             }
             checkWindowButton.setEnabled(true);
         }

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Window Checker</string>
     <string name="btn_check">Check</string>
+    <string name="tv_closed">Closed</string>
+    <string name="tv_prompt">Schrödinger</string>
+    <string name="tv_open">Open</string>
 </resources>
